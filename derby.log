@@ -1,23 +1,6 @@
-Thu Nov 24 12:21:54 COT 2016 : Servidor de red Apache Derby: Se ha iniciado 10.11.1.2 - (1629631) y está listo para aceptar las conexiones en el puerto 1527
-----------------------------------------------------------------
-Thu Nov 24 12:23:22 COT 2016:
- Iniciando instancia a816c00e-0158-975b-9637-00003bfaf284 de Derby, versión The Apache Software Foundation - Apache Derby - 10.11.1.2 - (1629631): 
-en el directorio de base de datos D:\GitHub\Ing_web\bogocentro_web con el cargador de clases sun.misc.Launcher$AppClassLoader@6f94fa3e
-Cargado desde file:/C:/Program%20Files/Java/jdk1.8.0_111/db/lib/derby.jar
-java.vendor=Oracle Corporation
-java.runtime.version=1.8.0_111-b14
-user.dir=C:\Program Files\Java\jdk1.8.0_111\db
-os.name=Windows 10
-os.arch=amd64
-os.version=10.0
-derby.system.home=D:\GitHub\Ing_web
-Cargador de clases de base de datos iniciado - derby.database.classpath=''
-----------------------------------------------------------------
-Thu Nov 24 12:23:29 COT 2016:
-Cerrando la instancia a816c00e-0158-975b-9637-00003bfaf284 en el directorio de base de datos D:\GitHub\Ing_web\bogocentro_web con cargador de clases sun.misc.Launcher$AppClassLoader@6f94fa3e
-Thu Nov 24 12:23:29 COT 2016 Thread[DRDAConnThread_2,5,main] (DATABASE = bogocentro_web), (DRDAID = {2}), Cierre de la base de datos 'bogocentro_web'.
-Thu Nov 24 12:26:04 COT 2016 Thread[DRDAConnThread_2,5,main] Cleanup action starting
-java.sql.SQLException: No se ha encontrado la base de datos 'bogocentro_web'.
+Sun Nov 27 15:39:05 COT 2016 : Servidor de red Apache Derby: Se ha iniciado 10.11.1.2 - (1629631) y está listo para aceptar las conexiones en el puerto 1527
+Sun Nov 27 16:06:21 COT 2016 Thread[DRDAConnThread_2,5,main] Cleanup action starting
+java.sql.SQLException: No se ha encontrado la base de datos 'martes13'.
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
 	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
@@ -36,12 +19,12 @@ java.sql.SQLException: No se ha encontrado la base de datos 'bogocentro_web'.
 	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
 	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
 	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
-Caused by: ERROR XJ004: No se ha encontrado la base de datos 'bogocentro_web'.
+Caused by: ERROR XJ004: No se ha encontrado la base de datos 'martes13'.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	... 18 more
 ============= begin nested exception, level (1) ===========
-ERROR XJ004: No se ha encontrado la base de datos 'bogocentro_web'.
+ERROR XJ004: No se ha encontrado la base de datos 'martes13'.
 	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
 	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
@@ -64,36 +47,56 @@ ERROR XJ004: No se ha encontrado la base de datos 'bogocentro_web'.
 	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
 ============= end nested exception, level (1) ===========
 Cleanup action completed
-Thu Nov 24 12:26:04 COT 2016 Thread[DRDAConnThread_2,5,main] (DATABASE = bogocentro_web), (DRDAID = {3}), No se ha encontrado la base de datos 'bogocentro_web'.
+Sun Nov 27 16:06:21 COT 2016 Thread[DRDAConnThread_2,5,main] (DATABASE = martes13), (DRDAID = {1}), No se ha encontrado la base de datos 'martes13'.
+Sun Nov 27 16:14:20 COT 2016 Thread[DRDAConnThread_2,5,main] Cleanup action starting
+java.sql.SQLException: No se ha encontrado la base de datos 'martes13'.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleDBNotFound(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Caused by: ERROR XJ004: No se ha encontrado la base de datos 'martes13'.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 18 more
+============= begin nested exception, level (1) ===========
+ERROR XJ004: No se ha encontrado la base de datos 'martes13'.
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleDBNotFound(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+============= end nested exception, level (1) ===========
+Cleanup action completed
+Sun Nov 27 16:14:20 COT 2016 Thread[DRDAConnThread_2,5,main] (DATABASE = martes13), (DRDAID = {2}), No se ha encontrado la base de datos 'martes13'.
 ----------------------------------------------------------------
-Thu Nov 24 12:26:28 COT 2016:
- Iniciando instancia a65c80ac-0158-975b-9637-00003bfaf284 de Derby, versión The Apache Software Foundation - Apache Derby - 10.11.1.2 - (1629631): 
-en el directorio de base de datos D:\GitHub\Ing_web\db_bogocentro con el cargador de clases sun.misc.Launcher$AppClassLoader@6f94fa3e
-Cargado desde file:/C:/Program%20Files/Java/jdk1.8.0_111/db/lib/derby.jar
-java.vendor=Oracle Corporation
-java.runtime.version=1.8.0_111-b14
-user.dir=C:\Program Files\Java\jdk1.8.0_111\db
-os.name=Windows 10
-os.arch=amd64
-os.version=10.0
-derby.system.home=D:\GitHub\Ing_web
-Cargador de clases de base de datos iniciado - derby.database.classpath=''
+Sun Nov 27 16:15:23 COT 2016: cerrando motor de Derby
 ----------------------------------------------------------------
-Thu Nov 24 12:26:35 COT 2016:
-Cerrando la instancia a65c80ac-0158-975b-9637-00003bfaf284 en el directorio de base de datos D:\GitHub\Ing_web\db_bogocentro con cargador de clases sun.misc.Launcher$AppClassLoader@6f94fa3e
-Thu Nov 24 12:26:35 COT 2016 Thread[DRDAConnThread_2,5,main] (DATABASE = db_bogocentro), (DRDAID = {5}), Cierre de la base de datos 'db_bogocentro'.
-----------------------------------------------------------------
-Thu Nov 24 12:27:10 COT 2016:
- Iniciando instancia 7d03414a-0158-975b-9637-00003bfaf284 de Derby, versión The Apache Software Foundation - Apache Derby - 10.11.1.2 - (1629631): 
-en el directorio de base de datos D:\GitHub\Ing_web\db_bogocentro con el cargador de clases sun.misc.Launcher$AppClassLoader@6f94fa3e
-Cargado desde file:/C:/Program%20Files/Java/jdk1.8.0_111/db/lib/derby.jar
-java.vendor=Oracle Corporation
-java.runtime.version=1.8.0_111-b14
-user.dir=C:\Program Files\Java\jdk1.8.0_111\db
-os.name=Windows 10
-os.arch=amd64
-os.version=10.0
-derby.system.home=D:\GitHub\Ing_web
-Cargador de clases de base de datos iniciado - derby.database.classpath=''
-----------------------------------------------------------------
-Thu Nov 24 13:04:21 COT 2016: cerrando motor de Derby
