@@ -1,10 +1,19 @@
 
 package negocio;
-public class Usuario {
+public class UsuarioObj {
     private String codUsuario, nomUsuario; 
     private String apeUsuario, nickUsuario; 
     private String pasUsuario, dirUsuario;
-    private String dniUsuario, fechaNac;
+    private String fechaNac,tipo;
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+    
 
     public String getCodUsuario() {
         return codUsuario;
@@ -52,14 +61,6 @@ public class Usuario {
 
     public void setDirUsuario(String dirUsuario) {
         this.dirUsuario = dirUsuario;
-    }
-
-    public String getDniUsuario() {
-        return dniUsuario;
-    }
-
-    public void setDniUsuario(String dniUsuario) {
-        this.dniUsuario = dniUsuario;
     }
 
     public String getFechaNac() {

@@ -6,19 +6,19 @@ import java.util.Date;
 import java.util.List;
 import java.util.Random;
 
-public class NotaPedido {
-   private DetallePedido detaPed;
+public class NotaPedidoObj {
+   private DetallePedidoObj detaPed;
    private double total;
    private int cantidad;
-   private Usuario Usuario;
+   private UsuarioObj Usuario;
    private String NumPedido, fecha, hora, cancelarPedido;
    private List cesta=new ArrayList();
    
-    public DetallePedido getDetaPed() {
+    public DetallePedidoObj getDetaPed() {
         return detaPed;
     }
 
-    public void setDetaPed(DetallePedido detaPed) {
+    public void setDetaPed(DetallePedidoObj detaPed) {
         this.detaPed = detaPed;
     }
 
@@ -38,11 +38,11 @@ public class NotaPedido {
         this.cantidad = cantidad;
     }
 
-    public Usuario getUsuario() {
+    public UsuarioObj getUsuario() {
         return Usuario;
     }
 
-    public void setUsuario(Usuario Usuario) {
+    public void setUsuario(UsuarioObj Usuario) {
         this.Usuario = Usuario;
     }
 

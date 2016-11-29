@@ -1,6 +1,6 @@
 package negocio;
 
-public class Producto {
+public class ProductoObj {
  private String codProducto, precioProducto, cantProducto;   
 
     public String getCodProducto() {

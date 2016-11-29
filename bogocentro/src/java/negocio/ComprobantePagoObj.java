@@ -1,17 +1,17 @@
 
 package negocio;
 
-public class ComprobantePago {
-    private NotaPedido notpedi;
+public class ComprobantePagoObj {
+    private NotaPedidoObj notpedi;
     private double total;
     private String NumComprobante, fecha;
-    private Usuario Usuario;
+    private UsuarioObj Usuario;
 
-    public NotaPedido getNotpedi() {
+    public NotaPedidoObj getNotpedi() {
         return notpedi;
     }
 
-    public void setNotpedi(NotaPedido notpedi) {
+    public void setNotpedi(NotaPedidoObj notpedi) {
         this.notpedi = notpedi;
     }
 
@@ -39,11 +39,11 @@ public class ComprobantePago {
         this.fecha = fecha;
     }
 
-    public Usuario getUsuario() {
+    public UsuarioObj getUsuario() {
         return Usuario;
     }
 
-    public void setUsuario(Usuario Usuario) {
+    public void setUsuario(UsuarioObj Usuario) {
         this.Usuario = Usuario;
     }
     

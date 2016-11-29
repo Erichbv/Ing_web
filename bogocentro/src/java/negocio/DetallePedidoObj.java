@@ -2,16 +2,16 @@
 package negocio;
 
 
-public class DetallePedido {
-    private Producto pro;
+public class DetallePedidoObj {
+    private ProductoObj pro;
     private String cantidad;
     private double importe, subtotal;
 
-    public Producto getPro() {
+    public ProductoObj getPro() {
         return pro;
     }
 
-    public void setPro(Producto pro) {
+    public void setPro(ProductoObj pro) {
         this.pro = pro;
     }
 

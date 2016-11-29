@@ -1,14 +1,4 @@
-Tue Nov 29 13:11:15 COT 2016 : Servidor de red Apache Derby: Se ha iniciado 10.11.1.2 - (1629631) y está listo para aceptar las conexiones en el puerto 1527
+Tue Nov 29 16:27:54 COT 2016 : Servidor de red Apache Derby: Se ha iniciado 10.11.1.2 - (1629631) y está listo para aceptar las conexiones en el puerto 1527
 ----------------------------------------------------------------
-Tue Nov 29 13:11:16 COT 2016:
- Iniciando instancia a816c00e-0158-b148-881c-00003bfaf284 de Derby, versión The Apache Software Foundation - Apache Derby - 10.11.1.2 - (1629631): 
-en el directorio de base de datos D:\GitHub\Ing_web\db_bogocentro con el cargador de clases sun.misc.Launcher$AppClassLoader@6f94fa3e
-Cargado desde file:/C:/Program%20Files/Java/jdk1.8.0_111/db/lib/derby.jar
-java.vendor=Oracle Corporation
-java.runtime.version=1.8.0_111-b14
-user.dir=C:\Program Files\Java\jdk1.8.0_111\db
-os.name=Windows 10
-os.arch=amd64
-os.version=10.0
-derby.system.home=D:\GitHub\Ing_web
-Cargador de clases de base de datos iniciado - derby.database.classpath=''
+Tue Nov 29 16:55:56 COT 2016: cerrando motor de Derby
+----------------------------------------------------------------

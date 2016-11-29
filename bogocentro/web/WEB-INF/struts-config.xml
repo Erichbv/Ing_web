@@ -7,6 +7,23 @@
 
 <struts-config>
     <form-beans>
+        <form-bean name="accesoForm" type="presentacion.accesoForm"/>
+        <form-bean name="actualizarUsuarioForm" type="presentacion.actualizarUsuarioForm"/>
+        <form-bean name="buscarUsuarioForm" type="presentacion.buscarUsuarioForm"/>
+        <form-bean name="grabarUsuarioForm" type="presentacion.grabarUsuarioForm"/>
+        <form-bean name="nuevoUsuarioForm" type="presentacion.nuevoUsuarioForm"/>
+        <form-bean name="buscarComprobanteForm" type="presentacion.buscarComprobanteForm"/>
+        <form-bean name="grabarComprobanteForm" type="presentacion.grabarComprobanteForm"/>
+        <form-bean name="nuevoComprobanteForm" type="presentacion.nuevoComprobanteForm"/>
+        <form-bean name="ActualizarProductoForm" type="presentacion.ActualizarProductoForm"/>
+        <form-bean name="buscarProductoForm" type="presentacion.buscarProductoForm"/>
+        <form-bean name="grabarProductoForm" type="presentacion.grabarProductoForm"/>
+        <form-bean name="nuevoProductoForm" type="presentacion.nuevoProductoForm"/>
+        <form-bean name="agregarProductoForm" type="presentacion.agregarProductoForm"/>
+        <form-bean name="buscarNotaPedidoForm" type="presentacion.buscarNotaPedidoForm"/>
+        <form-bean name="grabarNotaPedidoForm" type="presentacion.grabarNotaPedidoForm"/>
+        <form-bean name="nuevoNotaPedidoForm" type="presentacion.nuevoNotaPedidoForm"/>
+        <form-bean name="nuevoNotaPedido" type="presentacion.nuevoNotaPedido"/>
     
     </form-beans>
     
@@ -19,6 +36,7 @@
     </global-forwards>
 
     <action-mappings>
+        <action input="/Login.jsp" name="accesoForm" path="/accesoAction" scope="request" type="presentacion.accesoAction"/>
         <action path="/Welcome" forward="/welcomeStruts.jsp"/>
     </action-mappings>
     

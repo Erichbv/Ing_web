@@ -1,6 +1,6 @@
 
 package negocio;
-public class TipoUsuario {
+public class TipoUsuarioObj {
    private String TipoUsuario, nombreTipo, descripcionUsuario;
 
     public String getTipoUsuario() {

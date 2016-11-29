@@ -1,6 +1,6 @@
 package negocio;
 
-public class TipoProducto {
+public class TipoProductoObj {
     private String codTipo_Producto, nombre, descripcion;
 
     public String getCodTipo_Producto() {
