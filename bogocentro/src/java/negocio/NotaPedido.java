@@ -1,13 +1,19 @@
 
 package negocio;
 
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.Random;
+
 public class NotaPedido {
    private DetallePedido detaPed;
    private double total;
    private int cantidad;
    private Usuario Usuario;
    private String NumPedido, fecha, hora, cancelarPedido;
-
+   private List cesta=new ArrayList();
+   
     public DetallePedido getDetaPed() {
         return detaPed;
     }
