@@ -5,6 +5,8 @@
  */
 package persistencia;
 
+import java.util.List;
+
 public class datoImp implements dato{
 private Usuario us;
 private UsuarioJpaController usCon;
@@ -60,8 +62,14 @@ private UsuarioJpaController usCon;
 
     @Override
     public Usuario acceso(String nick, String password) {
-     //  usCon.findUsuario(nick)
-    
-    return null;}
+        List lista=usCon.findUsuarioEntities();
+        for(int i=0;i<lista.size();i++){
+            us=(Usuario) lista.get(i);
+            if (us.getNick().equalsIgnoreCase(nick) && us.getPassword().equalsIgnoreCase(password)) {
+                return us;
+            }
+        }
+        return null;
+    }
   
 }

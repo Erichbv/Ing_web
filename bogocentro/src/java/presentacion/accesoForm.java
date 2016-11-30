@@ -16,26 +16,27 @@ import org.apache.struts.action.ActionMessage;
  * @author Usuario
  */
 public class accesoForm extends org.apache.struts.action.ActionForm {
-    private String nick,password;
+   private String usuario,contraseña;
 
-    public String getNick() {
-        return nick;
+    public String getUsuario() {
+        return usuario;
     }
 
-    public void setNick(String nick) {
-        this.nick = nick;
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
     }
 
-    public String getPassword() {
-        return password;
+    public String getContraseña() {
+        return contraseña;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setContraseña(String contraseña) {
+        this.contraseña = contraseña;
     }
+   
     public ActionErrors validate(ActionMapping mapping, HttpServletRequest request) {
         ActionErrors errors = new ActionErrors();
-        if (getNick()== null || getNick().length() < 1) {
+        if (getUsuario()== null || getUsuario().length() < 1) {
             errors.add("name", new ActionMessage("error.name.required"));
             // TODO: add 'error.name.required' key to your resources
         }

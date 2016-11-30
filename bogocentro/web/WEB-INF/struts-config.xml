@@ -36,11 +36,13 @@
     </global-forwards>
 
     <action-mappings>
-        <action input="/Login.jsp" name="accesoForm" path="/accesoAction" scope="request" type="presentacion.accesoAction"/>
+        <action input="/Login.jsp" name="accesoForm" path="/accesoAction" scope="request" type="presentacion.accesoAction">
+            <forward name="pedido" path="/Pedido.jsp"/>
+        </action>
         <action path="/Welcome" forward="/welcomeStruts.jsp"/>
     </action-mappings>
     
-    <controller processorClass="org.apache.struts.tiles.TilesRequestProcessor"/>
+    <controller processorClass="org.springframework.web.struts.DelegatingTilesRequestProcessor"/>
 
     <message-resources parameter="com/myapp/struts/ApplicationResource"/>    
     

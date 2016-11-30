@@ -27,7 +27,7 @@ servicio ser;
             HttpServletRequest request, HttpServletResponse response)
             throws Exception {
         accesoForm acceso=(accesoForm)form;
-        request.getSession().setAttribute("usuario", ser.acceso(acceso.getNick(), acceso.getPassword()));
+        request.getSession().setAttribute("usuario", ser.acceso(acceso.getUsuario(), acceso.getContraseña()));
         return mapping.findForward("pedido");
     }
 }

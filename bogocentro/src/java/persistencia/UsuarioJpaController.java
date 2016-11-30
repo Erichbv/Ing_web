@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
 import javax.transaction.UserTransaction;
 import persistencia.exceptions.IllegalOrphanException;
 import persistencia.exceptions.NonexistentEntityException;
@@ -25,7 +26,11 @@ import persistencia.exceptions.RollbackFailureException;
  * @author Usuario
  */
 public class UsuarioJpaController implements Serializable {
-
+    
+    public UsuarioJpaController(){
+    emf=Persistence.createEntityManagerFactory("bogocentroPU");
+    }
+    
     public UsuarioJpaController(UserTransaction utx, EntityManagerFactory emf) {
         this.utx = utx;
         this.emf = emf;

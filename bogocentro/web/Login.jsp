@@ -20,29 +20,29 @@
           <P><b> <h1><font face="tahoma"><font color="white">BOGOCENTRO MINIMARKET</font></font></h1></b>
            <br>
            
-                <x:form action="/guardarAction">       
-                <div class="row">
-                <div class="col-sm-1 col-sm-offset-4">
-                    <h5><font FACE="tahoma">  <font color="white"> USUARIO: </font></font></h5>
-                </div>
-                <div class="col-sm-2 ">
-                    <input type="text" name="usuario" property="usuario" required/>
-                </div>
-                </div>   
+                <x:form action="/accesoAction">       
                     <div class="row">
-                <div class="col-sm-1 col-sm-offset-4">
-                    <h5><font FACE="tahoma">  <font color="white"> CONTRASEÑA: </font></font></h5>
-                </div>
-                <div class="col-sm-2 ">
-                    <input type="text" name="contraseña" property="contraseña" required/>
-                </div>
-                </div>
+                        <div class="col-sm-1 col-sm-offset-4">
+                            <h5><font FACE="tahoma">  <font color="white"> USUARIO: </font></font></h5>
+                        </div>
+                        <div class="col-sm-2 ">
+                            <input type="text" name="usuario" property="usuario" required/>
+                        </div>
+                    </div>   
+                    <div class="row">
+                        <div class="col-sm-1 col-sm-offset-4">
+                            <h5><font FACE="tahoma">  <font color="white"> CONTRASEÑA: </font></font></h5>
+                        </div>
+                        <div class="col-sm-2 ">
+                            <input type="password" name="contraseña" property="contraseña" required/>
+                        </div>
+                    </div>
                     <BR>
-                 <div class="row">
-                <div class="col-sm-1 col-sm-offset-5">
-                    <input type="submit" name="iniciar secion" value="INICIAR SESION" />
-                </div>
-                </div>
+                    <div class="row">
+                        <div class="col-sm-1 col-sm-offset-5">
+                            <input type="submit" name="iniciar sesion" value="INICIAR SESION" />
+                        </div>
+                    </div>
                 </x:form>
         </div>   
     <script src="//code.jquery.com/jquery.js"></script>
